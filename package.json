@@ -1,0 +1,31 @@
+{
+  "name": "oneword-search",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev -w @oneword/web",
+    "dev:api": "npm run dev -w @oneword/api",
+    "build": "npm run build -w @oneword/web && npm run build -w @oneword/api",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint .",
+    "test": "npm run test --workspaces --if-present",
+    "test:e2e": "playwright test",
+    "check": "npm run lint && npm run typecheck && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.63.0",
+    "eslint": "^10.0.0",
+    "globals": "^17.3.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.70.0"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "allowScripts": {}
+}

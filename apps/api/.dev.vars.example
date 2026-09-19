@@ -1,0 +1,4 @@
+GEMINI_API_KEY=your-gemini-api-key
+# Cloudflare's always-pass test secret. Replace it outside local development.
+TURNSTILE_SECRET_KEY=1x0000000000000000000000000000000AA
+

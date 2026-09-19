@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; connect-src 'self' https://*.workers.dev https://challenges.cloudflare.com https://api.test; frame-src https://challenges.cloudflare.com; img-src 'self' data: https:; base-uri 'self'; form-action 'self'"
+    />
+    <meta name="theme-color" content="#f7f6f2" />
+    <meta name="description" content="聞いたことだけ、できるだけ短く。" />
+    <title>一言検索</title>
+    <script
+      src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
